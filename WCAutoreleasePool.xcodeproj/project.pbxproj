@@ -13,6 +13,7 @@
 		010E318B234B3D7B00C681B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 010E318A234B3D7B00C681B0 /* Assets.xcassets */; };
 		010E318E234B3D7B00C681B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 010E318C234B3D7B00C681B0 /* LaunchScreen.storyboard */; };
 		010E3191234B3D7B00C681B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 010E3190234B3D7B00C681B0 /* main.m */; };
+		010E319A234B3DC500C681B0 /* WCAutoreleasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 010E3199234B3DC500C681B0 /* WCAutoreleasePool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		010E318D234B3D7B00C681B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		010E318F234B3D7B00C681B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		010E3190234B3D7B00C681B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		010E3198234B3DC500C681B0 /* WCAutoreleasePool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAutoreleasePool.h; sourceTree = "<group>"; };
+		010E3199234B3DC500C681B0 /* WCAutoreleasePool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAutoreleasePool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,15 +63,25 @@
 			children = (
 				010E3181234B3D7900C681B0 /* AppDelegate.h */,
 				010E3182234B3D7900C681B0 /* AppDelegate.m */,
+				010E318A234B3D7B00C681B0 /* Assets.xcassets */,
+				010E318F234B3D7B00C681B0 /* Info.plist */,
+				010E318C234B3D7B00C681B0 /* LaunchScreen.storyboard */,
+				010E3190234B3D7B00C681B0 /* main.m */,
+				010E3187234B3D7900C681B0 /* Main.storyboard */,
+				010E3197234B3D8900C681B0 /* Source */,
 				010E3184234B3D7900C681B0 /* ViewController.h */,
 				010E3185234B3D7900C681B0 /* ViewController.m */,
-				010E3187234B3D7900C681B0 /* Main.storyboard */,
-				010E318A234B3D7B00C681B0 /* Assets.xcassets */,
-				010E318C234B3D7B00C681B0 /* LaunchScreen.storyboard */,
-				010E318F234B3D7B00C681B0 /* Info.plist */,
-				010E3190234B3D7B00C681B0 /* main.m */,
 			);
 			path = WCAutoreleasePool;
+			sourceTree = "<group>";
+		};
+		010E3197234B3D8900C681B0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				010E3198234B3DC500C681B0 /* WCAutoreleasePool.h */,
+				010E3199234B3DC500C681B0 /* WCAutoreleasePool.m */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				010E319A234B3DC500C681B0 /* WCAutoreleasePool.m in Sources */,
 				010E3186234B3D7900C681B0 /* ViewController.m in Sources */,
 				010E3191234B3D7B00C681B0 /* main.m in Sources */,
 				010E3183234B3D7900C681B0 /* AppDelegate.m in Sources */,
@@ -285,6 +299,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 86AF29T7FZ;
 				INFOPLIST_FILE = WCAutoreleasePool/Info.plist;
@@ -302,6 +317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 86AF29T7FZ;
 				INFOPLIST_FILE = WCAutoreleasePool/Info.plist;
